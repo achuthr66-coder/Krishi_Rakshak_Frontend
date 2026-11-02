@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Security Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+        <h1>🐾 Live Animal Threat Monitor</h1>
+        
+        <div class="results">
+            <div class="panel">
+                <span class="title">System Evaluation</span>
+                <span id="threatStatus" class="badge">Awaiting Stream...</span>
+            </div>
+            <div class="panel">
+                <span class="title">SVM Model Boundary Status</span>
+                <span id="svmResult" class="badge">-</span>
+            </div>
+            <div class="panel">
+                <span class="title">Isolation Forest Guard Status</span>
+                <span id="ifResult" class="badge">-</span>
+            </div>
+            <div class="panel" style="background: #0f172a; color: white;">
+                <span class="title" style="color: #94a3b8;">Better Performing Model Analytics</span>
+                <span id="winnerModel" style="font-weight: 700; color: #38bdf8;">Evaluating...</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
