@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>AI Security Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishi Rakshak | Wildlife Threat Monitor</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="dashboard">
-        <h1>🐾 Live Animal Threat Monitor</h1>
-        
-        <div class="results">
-            <div class="panel">
-                <span class="title">System Evaluation</span>
-                <span id="threatStatus" class="badge">Awaiting Stream...</span>
-            </div>
-            <div class="panel">
-                <span class="title">SVM Model Boundary Status</span>
-                <span id="svmResult" class="badge">-</span>
-            </div>
-            <div class="panel">
-                <span class="title">Isolation Forest Guard Status</span>
-                <span id="ifResult" class="badge">-</span>
-            </div>
-            <div class="panel" style="background: #0f172a; color: white;">
-                <span class="title" style="color: #94a3b8;">Better Performing Model Analytics</span>
-                <span id="winnerModel" style="font-weight: 700; color: #38bdf8;">Evaluating...</span>
-            </div>
-        </div>
+  <header>
+    <div class="brand-title">
+      <!-- Wildlife Paw Print SVG Icon -->
+      <svg class="paw-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M256 224c-79.5 0-144 64.5-144 144 0 44.2 35.8 80 80 80 34.6 0 64-28 64-64 0 36 29.4 64 64 64 44.2 0 80-35.8 80-80 0-79.5-64.5-144-144-144zm-144-80c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48zm288 0c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48zm-208-64c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48zm128 0c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48z"/>
+      </svg>
+      KRISHI RAKSHAK
+    </div>
+    <div class="subtitle">Real-Time Crop Protection & Threat Monitoring System</div>
+  </header>
+
+  <main>
+    <!-- HIGH THREAT CARD -->
+    <div class="card high">
+      <div class="card-label">Threat Level: High</div>
+      <div class="status-badge">
+        <span class="status-indicator"></span>
+        <span>HIGH THREAT</span>
+      </div>
+      <p class="description">
+        Wild animals (Elephant / Bear) detected near perimeter. Deterrent systems and buzzers active.
+      </p>
     </div>
 
-    <script src="script.js"></script>
+    <!-- LOW THREAT CARD -->
+    <div class="card low">
+      <div class="card-label">Threat Level: Low</div>
+      <div class="status-badge">
+        <span class="status-indicator"></span>
+        <span>LOW THREAT</span>
+      </div>
+      <p class="description">
+        Domestic animals or humans detected (Person / Dog / Cat / Cow). Perimeter clear & safe.
+      </p>
+    </div>
+  </main>
+
 </body>
 </html>

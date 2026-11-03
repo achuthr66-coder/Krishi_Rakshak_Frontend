@@ -1,0 +1,4 @@
+*.py
+app1.py
+__pycache__/
+requirements.txt
