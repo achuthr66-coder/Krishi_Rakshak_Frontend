@@ -1,5 +1,6 @@
 {
-  "framework": null,
-  "buildCommand": null,
-  "outputDirectory": null
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
